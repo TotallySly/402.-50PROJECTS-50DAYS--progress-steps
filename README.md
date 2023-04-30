@@ -73,11 +73,11 @@ The JavaScript within this project had some interesting logic, which turned out 
     	}
     }
 
-As `const circles` becomes a node list, which is effectively an array, then this can by used dynamically within the _if_ statement, regardless of how many steps there are to progress through.
+As `const circles` becomes a node list, which is effectively an array, this can by used dynamically within the _if_ statement, regardless of how many steps there are to progress through.
 
-Also, bysetting _currentActive_ to 1, and incrementing this upon each _click_ of _next_ will progress the bar to each step. I liked the simplicity of making the counter stop, but changing currentActive to the length of the circles node list. Making the code dynamic, and a clever way of ending the click sequence.
+Also, bysetting _currentActive_ to 1, and incrementing this upon each _click_ of _next_ will progress the bar to each step. I liked the simplicity of making the counter stop, by changing currentActive to the length of the circles node list. This will make the code dynamic, and a clever way of ending the click sequence.
 
-This logic is applied for the _prev_ button. But instead of increamenting, the _click_ decrements the _currentActive._ However, the _if_ statement changes slightly.
+This logic is applied for the _prev_ button. But instead of incrementing, the _click_ decrements the _currentActive._ However, the _if_ statement changes slightly.
 
     if(currentActive < 1 {
         currentActive = 1;
